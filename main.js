@@ -70,6 +70,13 @@ image(video,paddle1X, paddle1Y, 40,70);
  fill("black");
  stroke("black");
  rect(0,0,20,700);
+
+ if(scoreRightWrist > 0.2)
+  {
+    fill("red");
+    stroke("red");
+    circle(rightWristX, rightWristY, 40);
+  }
  
    //funtion paddleInCanvas call 
    paddleInCanvas();
